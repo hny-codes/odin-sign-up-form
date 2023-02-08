@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign-up Form</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      media="screen"
+      href="https://fontlibrary.org//face/fira-code"
+      type="text/css"
+    />
   </head>
   <body>
     <div class="container">
@@ -17,7 +23,7 @@
         />
       </aside>
       <main class="main-container">
-        <header>
+        <header class="header">
           <h2>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora
             illo, fuga nam accusamus quia deleniti exercitationem obcaecati
@@ -27,45 +33,58 @@
           <h3>Will you find your adventure?</h3>
         </header>
         <fieldset class="form-container">
+          <legend>Sign up !</legend>
           <form action="#">
             <section class="element-container">
               <ul>
                 <li>
-                  <label for="fname">First Name:</label>
-                  <input type="text" name="fname" id="fname" />
+                  <div class="field">
+                    <label for="fname">First Name</label>
+                    <input type="text" name="fname" id="fname" />
+                  </div>
                 </li>
                 <li>
-                  <label for="lname">Last Name:</label>
-                  <input type="text" name="lname" id="lname" />
+                  <div class="field">
+                    <label for="lname">Last Name</label>
+                    <input type="text" name="lname" id="lname" />
+                  </div>
                 </li>
                 <li>
-                  <label for="email">Email:</label>
-                  <input type="email" name="email" id="email" />
+                  <div class="field">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" />
+                  </div>
                 </li>
                 <li>
-                  <label for="phone">Phone:</label>
-                  <input type="tel" name="phone" id="phone" />
+                  <div class="field">
+                    <label for="phone">Phone</label>
+                    <input type="tel" name="phone" id="phone" />
+                  </div>
                 </li>
                 <li>
-                  <label for="password">Password:</label>
-                  <input type="password" name="password" id="password" />
+                  <div class="field">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" />
+                  </div>
                 </li>
                 <li>
-                  <label for="confirm_password">Confirm password:</label>
-                  <input
-                    type="password"
-                    name="confirm_password"
-                    id="confirm_password"
-                  />
+                  <div class="field">
+                    <label for="confirm_password">Confirm password</label>
+                    <input
+                      type="password"
+                      name="confirm_password"
+                      id="confirm_password"
+                    />
+                  </div>
                 </li>
               </ul>
             </section>
-            <section class="btn-container">
-                <button type="submit">Create Account</button>
-            </section>
           </form>
         </fieldset>
-        <p>Already have an account? <a href="#">Log in here!</a></p>
+        <section class="account-container">
+          <button type="submit">Create Account</button>
+          <p>Already have an account? <a href="#">Log in here!</a></p>
+        </section>
       </main>
     </div>
   </body>
