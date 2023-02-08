@@ -1,102 +1,101 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
-    --bg-color-primary: hsla(144, 24%, 4%, 1);
-    --bg-color-secondary: hsla(84, 12%, 8%, 1);
-    --bg-color-secondary-lighter: hsla(84, 12%, 8%, 0.5);
-    --accent-color-primary: hsla(1, 60%, 40%, 1);
-    --accent-color-secondary: hsla(3, 61%, 35%, 1);
-    --text-color-primary: hsla(55, 14%, 81%, 1);
+  --bg-color-primary: hsla(144, 24%, 4%, 1);
+  --bg-color-secondary: hsla(84, 12%, 8%, 1);
+  --bg-color-secondary-lighter: hsla(84, 12%, 8%, 0.5);
+  --accent-color-primary: hsla(1, 60%, 40%, 1);
+  --accent-color-secondary: hsla(3, 61%, 35%, 1);
+  --text-color-primary: hsla(55, 14%, 81%, 1);
 }
 
 body {
-    color: var(--text-color-primary);
-    font-size: 0.825rem;
-    font-family: 'FiraCodeRegular';
-    font-weight: normal;
-    font-style: normal;
+  color: var(--text-color-primary);
+  font-size: 0.825rem;
+  font-family: "FiraCodeRegular";
+  font-weight: normal;
+  font-style: normal;
 }
 
 input {
-    appearance: none;
+  appearance: none;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 .container {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  height: 100vh;
 }
 
 .sidebar-container {
-    position: relative;
-    overflow: hidden;
-    display: flex;
+  position: relative;
+  overflow: hidden;
+  display: flex;
 }
 
 .sidebar-container img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .span-container {
-    position: absolute;
-    color: var(--text-color-primary);
-    background-color: var(--bg-color-secondary-lighter);
-    width: 100%;
-    padding: 4rem 0 4rem 4rem;
-    top: 100px;
+  position: absolute;
+  color: var(--text-color-primary);
+  background-color: var(--bg-color-secondary-lighter);
+  width: 100%;
+  padding: 4rem 0 4rem 4rem;
+  top: 100px;
 }
 
 .main-container {
-    background-color: var(--bg-color-primary);
-    padding: 0 2rem;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+  background-color: var(--bg-color-primary);
+  padding: 0 2rem;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
 }
 
 .form-container {
-    background-color: var(--bg-color-secondary);
-    display: inline-block;
+  background-color: var(--bg-color-secondary);
+  display: inline-block;
 }
 
 .header {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 
 .header h3 {
-    margin: 4rem 0;
+  margin: 4rem 0;
 }
 
 .element-container ul {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 1rem 2rem;
-    gap: 2rem;
-    
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 1rem 2rem;
+  gap: 2rem;
 }
 
 .field {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .account-container {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 
 .account-container button,
 .account-container p {
-    margin-top: 1.5rem;
+  margin-top: 1.5rem;
 }
