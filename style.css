@@ -99,7 +99,7 @@ ul {
 
 .element-container button {
   position: absolute;
-  bottom: 180px;
+  top: calc(100vh + -15vw);
   background-color: var(--accent-color-secondary);
   color: var(--text-color-primary);
   border: 2px solid var(--accent-color-primary);
@@ -145,5 +145,14 @@ ul {
 }
 
 .account-container p {
+  font-size: 1.1rem;
   margin-top: 1.5rem;
+}
+
+.account-container a {
+  color: var(--accent-color-primary);
+}
+
+.account-container a:hover {
+  filter: brightness(1.5);
 }
