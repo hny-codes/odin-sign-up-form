@@ -13,6 +13,10 @@
     --text-color-primary: hsla(55, 14%, 81%, 1);
 }
 
+body {
+    color: var(--text-color-primary);
+}
+
 .container {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -40,6 +44,10 @@
     top: 100px;
 }
 
-.form-container {
+.main-container {
     background-color: var(--bg-color-primary);
+}
+
+.form-container {
+    background-color: var(--bg-color-secondary);
 }
