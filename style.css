@@ -8,6 +8,7 @@
   --bg-color-primary: hsla(144, 24%, 4%, 1);
   --bg-color-secondary: hsla(84, 12%, 8%, 1);
   --bg-color-secondary-lighter: hsla(84, 12%, 8%, 0.5);
+  --form-color: hsla(55, 14%, 81%, 1);
   --accent-color-primary: hsla(1, 60%, 40%, 1);
   --accent-color-secondary: hsla(3, 61%, 35%, 1);
   --text-color-primary: hsla(55, 14%, 81%, 1);
@@ -69,6 +70,15 @@ ul {
 .form-container {
   background-color: var(--bg-color-secondary);
   display: inline-block;
+  border: 2px inset var(--bg-color-primary);
+  border-radius: 20px;
+}
+
+.form-container legend {
+    padding-left: 2rem;
+    color: var(--accent-color-primary);
+    font-weight: bolder;
+    font-size: 1.3rem;
 }
 
 .header {
@@ -81,15 +91,44 @@ ul {
 
 .element-container ul {
   display: grid;
+  position: relative;
   grid-template-columns: 1fr 1fr;
   padding: 1rem 2rem;
   gap: 2rem;
+}
+
+.element-container button {
+    position: absolute;
+    bottom: 220px;
 }
 
 .field {
   display: flex;
   flex-direction: column;
 }
+
+.field input {
+    outline: none;
+    border: 1px solid #555;
+    background-color: var(--bg-color-primary);
+    border-radius: 5px;
+    color: var(--text-color-primary);
+    padding: 3.5px;
+}
+
+.field input:indeterminate {
+    outline: 1px solid #555;
+}
+
+.field input:focus {
+    border: none;
+    outline: 2px solid var(--form-color);
+}
+
+/* .field input:invalid {
+    border: none;
+    outline: 2px solid var(--accent-color-secondary);
+} */
 
 .account-container {
   margin-top: 2rem;
