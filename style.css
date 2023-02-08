@@ -75,10 +75,10 @@ ul {
 }
 
 .form-container legend {
-    padding-left: 2rem;
-    color: var(--accent-color-primary);
-    font-weight: bolder;
-    font-size: 1.3rem;
+  padding-left: 2rem;
+  color: var(--accent-color-primary);
+  font-weight: bolder;
+  font-size: 1.3rem;
 }
 
 .header {
@@ -98,8 +98,18 @@ ul {
 }
 
 .element-container button {
-    position: absolute;
-    bottom: 220px;
+  position: absolute;
+  bottom: 180px;
+  background-color: var(--accent-color-secondary);
+  color: var(--text-color-primary);
+  border: 2px solid var(--accent-color-primary);
+  border-radius: 25px;
+  font-weight: bolder;
+  padding: 1rem;
+}
+
+.element-container button:hover {
+  cursor: pointer;
 }
 
 .field {
@@ -108,21 +118,21 @@ ul {
 }
 
 .field input {
-    outline: none;
-    border: 1px solid #555;
-    background-color: var(--bg-color-primary);
-    border-radius: 5px;
-    color: var(--text-color-primary);
-    padding: 3.5px;
+  outline: none;
+  border: 1px solid #555;
+  background-color: var(--bg-color-primary);
+  border-radius: 5px;
+  color: var(--text-color-primary);
+  padding: 3.5px;
 }
 
 .field input:indeterminate {
-    outline: 1px solid #555;
+  outline: 1px solid #555;
 }
 
 .field input:focus {
-    border: none;
-    outline: 2px solid var(--form-color);
+  border: none;
+  outline: 2px solid var(--form-color);
 }
 
 /* .field input:invalid {
@@ -131,10 +141,9 @@ ul {
 } */
 
 .account-container {
-  margin-top: 2rem;
+  margin-top: 5rem;
 }
 
-.account-container button,
 .account-container p {
   margin-top: 1.5rem;
 }
