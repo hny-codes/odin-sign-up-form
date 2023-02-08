@@ -15,6 +15,22 @@
 
 body {
     color: var(--text-color-primary);
+    font-size: 0.825rem;
+    font-family: 'FiraCodeRegular';
+    font-weight: normal;
+    font-style: normal;
+}
+
+input {
+    appearance: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
 }
 
 .container {
@@ -32,7 +48,6 @@ body {
 .sidebar-container img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
 }
 
 .span-container {
@@ -46,8 +61,42 @@ body {
 
 .main-container {
     background-color: var(--bg-color-primary);
+    padding: 0 2rem;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
 }
 
 .form-container {
     background-color: var(--bg-color-secondary);
+    display: inline-block;
+}
+
+.header {
+    margin-top: 2rem;
+}
+
+.header h3 {
+    margin: 4rem 0;
+}
+
+.element-container ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem 2rem;
+    gap: 2rem;
+    
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+}
+
+.account-container {
+    margin-top: 2rem;
+}
+
+.account-container button,
+.account-container p {
+    margin-top: 1.5rem;
 }
