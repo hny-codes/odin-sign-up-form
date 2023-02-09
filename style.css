@@ -52,6 +52,7 @@ ul {
 }
 
 .span-container {
+  display: flex;
   position: absolute;
   color: var(--text-color-primary);
   background-color: var(--bg-color-secondary-lighter);
@@ -62,6 +63,30 @@ ul {
   text-transform: capitalize;
   font-weight: bolder;
   font-style: italic;
+}
+
+.span-container span {
+  font-style: normal;
+}
+
+.span-container p {
+  animation-name: char;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes char {
+  0% {
+    color: var(--text-color-primary);
+  }
+
+  50% {
+    color: var(--accent-color-primary);
+  }
+
+  100% {
+    color: var(--text-color-primary);
+  }
 }
 
 .main-container {
