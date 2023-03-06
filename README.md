@@ -1,7 +1,7 @@
 # odin-sign-up-form
 A small project for The Odin Project
 
-## Topics learned:
+## Project focus:
 - Form tags and the respective tags needed for forms (label, input, etc..)
 - Styling needed for forms and removal of system-level styling
 - Form validation
